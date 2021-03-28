@@ -1,0 +1,16 @@
+<div class="">
+  Chat component
+    <!-- xd -->
+
+  <div class="chat_msg">
+    <ul>
+      <li *ngFor="let mensaje of mensajes">{{ mensaje }}</li>
+    </ul>
+  </div>
+  <div class="">
+    <form>
+      <input type="text" name="value" [(ngModel)]="msg" />
+      <button type="submit" (click)="sendMsg()">Enviar</button>
+    </form>
+  </div>
+</div>

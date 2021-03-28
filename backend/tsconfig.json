@@ -1,0 +1,42 @@
+{
+	"compileOnSave": false,
+	"compilerOptions": {
+		"forceConsistentCasingInFileNames": true,
+		"declaration": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"allowSyntheticDefaultImports": true,
+		"sourceMap": true,
+		"outDir": "./dist",
+		"baseUrl": "./",
+		"incremental": true,
+		"noFallthroughCasesInSwitch": true,
+		"removeComments": true,
+		"moduleResolution": "Node",
+		"downlevelIteration": true,
+		"importHelpers": true,
+		"target": "es2020",
+		"module": "CommonJS",
+		"lib": ["es2021", "dom"],
+
+		"noImplicitReturns": false,
+		"strict": true
+	}
+}
+
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+// {
+//   "compileOnSave": false,
+//   "compilerOptions": {
+//     "importHelpers": true,
+//     "target": "es2020",
+//     "module": "es2020",
+//     "lib": ["es2021", "dom"]
+//   },
+//   "angularCompilerOptions": {
+//     "strictInjectionParameters": true,
+//     "strictInputAccessModifiers": true,
+//     "strictTemplates": true,
+//     "fullTemplateTypeCheck": true
+//   }
+// }
