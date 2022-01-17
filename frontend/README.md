@@ -1,4 +1,4 @@
-# SocketAngular
+# amli360-frontend
 
 Proyecto generado con la cli de angular [Angular CLI](https://github.com/angular/angular-cli) version 11.0.1.
 
