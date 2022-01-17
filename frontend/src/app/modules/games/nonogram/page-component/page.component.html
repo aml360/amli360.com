@@ -1,0 +1,37 @@
+<div>
+	<table class="table-game table-bordered">
+		<tbody>
+			<tr>
+				<td></td>
+				<td *ngFor="let hintCol of distribuidor[1]">
+					{{ hintCol }}
+				</td>
+			</tr>
+			<tr *ngFor="let row of gameArray; let i = index" [id]="i">
+				<td>
+					{{ distribuidor[0][i] }}
+				</td>
+				<td
+					*ngFor="let cell of row; let j = index"
+					(click)="cellClicked(i, j)"
+					class="cell"
+					[ngSwitch]="cell"
+				>
+					<div *ngSwitchCase="undefined"></div>
+					<img
+						*ngSwitchCase="false"
+						src="../../../../../assets/images/nonogram/false.gif"
+						alt="false"
+						class="nono-cell-img"
+					/>
+					<img
+						*ngSwitchCase="true"
+						src="../../../../../assets/images/nonogram/true.gif"
+						alt="true"
+						class="nono-cell-img"
+					/>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
