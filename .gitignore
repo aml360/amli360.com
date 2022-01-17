@@ -3,3 +3,7 @@ dist
 node_modules
 target
 .angular
+
+# Lockfiles (ignored only on dev branches)
+package-lock.json
+pnpm-lock.yaml
