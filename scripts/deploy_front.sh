@@ -13,5 +13,5 @@ echo "$SSH_KEY">$SSH_KEY_TMP
 
 cd ../frontend
 
-scp -o "StrictHostKeyChecking=no" -i $SSH_KEY_TMP -r dist/amli360-frontend/* $SSH_USERNAME@$SSH_HOST:$PATH_TO_DEPLOY
+scp -q -o "StrictHostKeyChecking=no" -i $SSH_KEY_TMP -r dist/amli360-frontend/* $SSH_USERNAME@$SSH_HOST:$PATH_TO_DEPLOY
 # ssh -o "StrictHostKeyChecking=no" -i $SSH_KEY_TMP "$SSH_USERNAME@$SSH_HOST" "echo hola"
